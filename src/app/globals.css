@@ -3,21 +3,52 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --theme-dark: #1a2520; /* より暗い色に変更 */
+  --theme-medium: #3f4f44;
+  --theme-accent: #c89f7a;
+  --theme-light: #dcd7c9;
+  --theme-text: #dcd7c9;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+[data-theme="theme1"] {
+  --theme-dark: #1a2520; /* Theme 1の背景を暗く */
+  --theme-medium: #3f4f44;
+  --theme-accent: #c89f7a;
+  --theme-light: #dcd7c9;
+  --theme-text: #dcd7c9;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+[data-theme="theme2"] {
+  --theme-dark: #0d1c26; /* Theme 2の背景を暗く */
+  --theme-medium: #29435c;
+  --theme-accent: #7a9a78;
+  --theme-light: #d1d4c9;
+  --theme-text: #d1d4c9;
+}
+
+.bg-theme-dark {
+  background-color: var(--theme-dark);
+}
+.bg-theme-medium {
+  background-color: var(--theme-medium);
+}
+.bg-theme-accent {
+  background-color: var(--theme-accent);
+}
+.text-theme-dark {
+  color: var(--theme-dark);
+}
+.text-theme-accent {
+  color: var(--theme-accent);
+}
+.text-theme-light {
+  color: var(--theme-light);
+}
+.text-theme-text {
+  color: var(--theme-text);
+}
+.border-theme-accent {
+  border-color: var(--theme-accent);
 }
 
 .animate-fade-in {

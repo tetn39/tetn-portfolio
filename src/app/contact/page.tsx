@@ -1,9 +1,9 @@
 export default function Contact() {
   return (
-    <div className="py-10">
-      <h1 className="text-4xl font-bold mb-10 text-center">Contact Me</h1>
-      <div className="max-w-lg mx-auto bg-gray-800 rounded-xl shadow-lg p-8">
-        <p className="text-gray-300 mb-6 text-center">
+    <div className="py-10 bg-theme-dark">
+      <h1 className="text-4xl font-bold mb-10 text-center text-theme-light">Contact Me</h1>
+      <div className="max-w-lg mx-auto bg-theme-medium rounded-xl shadow-lg p-8">
+        <p className="mb-6 text-center text-theme-text">
           Feel free to reach out via the following platforms:
         </p>
         <ul className="space-y-4">
@@ -12,7 +12,7 @@ export default function Contact() {
               href="https://github.com/tetn39"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-purple-400 hover:text-purple-300 transition"
+              className="text-theme-accent hover:text-theme-light transition"
             >
               GitHub: tetn39
             </a>
@@ -22,7 +22,7 @@ export default function Contact() {
               href="https://x.com/tetn39"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-purple-400 hover:text-purple-300 transition"
+              className="text-theme-accent hover:text-theme-light transition"
             >
               Twitter: @tetn39
             </a>
